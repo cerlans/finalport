@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kevin G. Developer & Designer</title>
+      <link href="styles.css" rel='stylesheet'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <script defer src ="node_modules/swup/dist/swup.min.js"></script>
+   </head>
+   <body>
+      <!--OverArching flex container that will put both the navigation and the main content side by side-->
+      <div class='md:flex'>
+         <header class='md:w-52 md:flex-shrink-0 shadow-md'>
+            <nav class='flex  bg-gray-300 text-gray-900 shadow-lg md:hidden'>
+               <!--Burger Menue-->
+               <div class=' pr-4 pl-4 pt-2   mr-4 text-2xl border-r border-gray-500 cursor-pointer' id="controllerNav">
+                  <i class="fas fa-bars"></i>
+               </div>
+               <!--nav Title-->
+               <div class='flex-1 p-2  text-2xl  font-bold uppercase  text-center'>
+                  Kevin G
+               </div>
+            </nav>
+            <!--Containing Parent, will be a width off around 30%-->
+            <div class='toggleSmall h-screen bg-gray-200 shadow-lg z-10 fixed top-0 overflow-x-hidden flex-shrink-0 md:w-52  md:static md:shadow-lg md:relative ' id='hiddenMenu'>
+               <!--Absolutely Positioned X mark-->
+               <div id='closeMark' class='absolute p-4  text-2xl  bg-gray-200 md:hidden '>
+                  <i class="fas fa-times"></i>
+               </div>
+               <!--SELFIE Image Container!!!!!!!!!!!!!!!!!!!!-->
+               <div class='flex flex-col h-full'>
+                  <div>
+                     <div class='w-52 relative'>
+                        <img  class='w-52 ' src="https://i.vgy.me/PguXpb.jpg" alt="z4svLJ.png">
+                        <div class='w-full absolute left-0 bottom-0 pt-2 pb-2 opacity-75 text-2xl uppercase text-center font-bold bg-blue-600 text-white'>Kevin G.</div>
+                     </div>
+                     <!--Unorderd List that will contain the navigation-->
+                     <div class=' w-52 font-light text-lg text-left '>
+                        <ul>
+                           <ul>
+                              <a href='/index.html' class='click cursor-pointer'><li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none '><i class="fas fa-home mr-4"></i>Home</li></a>
+                              <a href="/about.html" class='click cursor-pointer'><li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-user mr-4"></i>About</li></a>
+                              <a href="/resume.html" class='click cursor-pointer'><li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-sticky-note mr-4"></i>Resume</li></a>
+                              <a href="/portfolio.html" class='click cursor-pointer'><li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-copy mr-4"></i>Projects</li></a>
+                           </ul>
+                        </ul>
+                     </div>
+                  </div>
+                 <div class='mt-auto'>
+                     <div class='p-4 w-52 text-sm font-light text-left font-semibold text-blue-600' >
+                        <div>
+                           2021 © Kevin G.
+                           All Right Reserved.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main id='swup' class='transition-fade  h-screen  w-full  md:overflow-auto md:p-8'>
+            <div class='flex justify-between p-4 pt-12 text-4xl text-blue-600 font-bold border-dashed border-b-2 border-gray-300'>
+               <div class='mr-4'>
+                  <h2>About Me.</h2>
+               </div>
+               <div >
+                  <i class="far fa-user"></i>
+               </div>
+            </div>
+            <!--Content-->
+            <!--Flex Container that will be triggered at LG screen size (1024px)-->
+            <div class='pt-6 lg:flex'>
+            <div class='text-left p-4 lg:w-9/12'>
+               <h2 class='text-2xl mb-6 font-semibold'>Web Developer & Web Designer</h2>
+               <p class='mb-4 text-gray-600 '>My name is Kevin G and i've had a passion for the web since i was in highschool. I went to Norwalk community College and graduated with a degree in Web Development and Design.</p>
+               <p class='mb-4 text-gray-600'>
+                  I have since been fine tuning my developer skill set, mainly focusing on a mastering off the basic stack of HTML, CSS, JAVASCRIPT, but i have dabbled here and there on other frameworks such as reactJS.</p>
+               <p class='mb-4 text-gray-600'>I am confident in my abilities and look forward to working with you</p>
+               <div class='mt-12'><img src="https://i.vgy.me/VDPEqv.png" alt="VDPEqv.png"></div>
+            </div>
+            <!--Personal information-->
+            <div class='mt-12 text-left p-4      lg:mt-0 lg:w-3/12 lg:flex-shrink-0'>
+               <h2 class='text-2xl mb-6 font-semibold'>Personal Information </h2>
+               <div>
+                  <div class='mb-4'><span class='text-blue-600 font-bold'>Name:</span> Kevin Gomez</div>
+                  <div class='mb-4'><span class='text-blue-600 font-bold'>Email:</span>  kgomez222@hotmail.com</div>
+                  <div class='mb-4'><span class='text-blue-600 font-bold'>Residence:</span>  Norwalk, CT</div>
+                  <div class='mb-4'><span class='text-blue-600 font-bold'>Phone:</span> 203-408-0584</div>
+                  
+               </div>
+            </div>
+         </div>
+            <!--Skills-->
+            <div class='text-center mt-12 p-8'>
+               <h2 class='text-2xl mb-6 uppercase font-semibold'>Skills</h2>
+               <!--flex parent will be trigger at 640px-->
+               <div class=" xl:flex" >
+                  <div class='m-auto mb-6 sm:flex'>
+                     <div class='pt-6 mb-4 sm:flex-1 sm:p-4'>
+                        <i class="fas fa-terminal text-4xl mb-4 text-blue-600"></i>
+                        <h3 class="text-xl mb-4 font-medium">Web Development</h3>
+                        <!--Max width of the P classes below is around 560px-->
+                        <p class='max-w-xl m-auto text-gray-600'>I've created numerous projects revolving around API's, complete full stack projects that use some form off backend authentication, along with some smaller projects. </p>
+                     </div>
+                     <div class='pt-6 mb-4 sm:flex-1 sm:p-4'>
+                        <i class="fas fa-drafting-compass text-4xl mb-4 text-blue-600"></i>
+                        <h3 class="text-xl mb-4 font-medium">Web Design</h3>
+                        <p class='max-w-xl m-auto text-gray-600'>I've fine tuned my css skills to find a rememdy to each graphical problem i face. I've designed multiple website, most incomplete but still show my progress with CSS</p>
+                     </div>
+                  </div>
+                  <div class='m-auto sm:flex xl:m-0'>
+                     <div class='pt-6 mb-4 sm:flex-1 sm:p-4'>
+                        <i class="fas fa-desktop text-4xl mb-4 text-blue-600"></i>
+                        <h3 class="text-xl mb-4 font-medium">Responsive Design</h3>
+                        <p class='max-w-xl m-auto text-gray-600'>
+                           Factoring for various screen sizes is a giant task, i am confident that throughout the time i've spent refining my skills i am able to refine any websites to multiple screen sizes
+                        </p>
+                     </div>
+                     <div class='pt-6 mb-4 sm:flex-1 sm:p-4'>
+                        <i class="fas fa-star text-4xl mb-4 text-blue-600"></i>
+                        <h3 class="text-xl mb-4 font-medium">Dedication</h3>
+                        <p class='max-w-xl m-auto text-gray-600'>I've been fine tuning my ability to code, css and javascript, searching through stackoverflow, finding every quirk the languages offer. I love this field, and i see myself doing this the rest off my life</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+         </main>
+      </div>
+      
+      <script defer src='script.js'></script>
+   </body>
+</html>
+

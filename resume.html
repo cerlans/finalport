@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resume</title>
+      <link href="styles.css" rel='stylesheet'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <script defer src ="node_modules/swup/dist/swup.min.js"></script>
+   </head>
+   <body>
+      <div class='md:flex'>
+         <header class='md:w-52 md:flex-shrink-0 shadow-md'>
+            <nav class='flex  bg-gray-300 text-gray-900 shadow-lg md:hidden'>
+               <!--Burger Menue-->
+               <div class=' pr-4 pl-4 pt-2   mr-4 text-2xl border-r border-gray-500 cursor-pointer' id="controllerNav">
+                  <i class="fas fa-bars"></i>
+               </div>
+               <!--nav Title-->
+               <div class='flex-1 p-2  text-2xl  font-bold uppercase  text-center'>
+                  Kevin G
+               </div>
+            </nav>
+            <!--Containing Parent, will be a width off around 30%-->
+            <div class='toggleSmall h-screen bg-gray-200 shadow-lg z-10 fixed top-0 overflow-x-hidden flex-shrink-0 md:w-52  md:static md:shadow-lg md:relative ' id='hiddenMenu'>
+               <!--Absolutely Positioned X mark-->
+               <div id='closeMark' class='absolute p-4  text-2xl  bg-gray-200 md:hidden '>
+                  <i class="fas fa-times"></i>
+               </div>
+               <!--SELFIE Image Container!!!!!!!!!!!!!!!!!!!!-->
+               <div class='flex flex-col h-full'>
+                  <div>
+                     <div class='w-52 relative'>
+                        <img  class='w-52 ' src="https://i.vgy.me/PguXpb.jpg" alt="z4svLJ.png">
+                        <div class='w-full absolute left-0 bottom-0 pt-2 pb-2 opacity-75 text-2xl uppercase text-center font-bold bg-blue-600 text-white'>Kevin G.</div>
+                     </div>
+                     <!--Unorderd List that will contain the navigation-->
+                     <div class=' w-52 font-light text-lg text-left '>
+                        <ul>
+                           <ul>
+                              <a href='/index.html' class='click cursor-pointer'>
+                                 <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none '><i class="fas fa-home mr-4"></i>Home</li>
+                              </a>
+                              <a href="/about.html" class='click cursor-pointer'>
+                                 <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-user mr-4"></i>About</li>
+                              </a>
+                              <a href="/resume.html" class='click cursor-pointer'>
+                                 <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-sticky-note mr-4"></i>Resume</li>
+                              </a>
+                              <a href="/portfolio.html" class='click cursor-pointer'>
+                                 <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-copy mr-4"></i>Projects</li>
+                              </a>
+                           </ul>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class='mt-auto'>
+                     <div class='p-4 w-52 text-sm font-light text-left font-semibold text-blue-600' >
+                        <div>
+                           2021 © Kevin G.
+                           All Right Reserved.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main id='swup' class=' p-4 transition-fade h-screen  w-full md:overflow-auto md:p-8 '>
+            <div class='flex justify-between p-4 pt-12 text-4xl text-blue-600 font-bold  text-2xl  font-semibold border-dashed border-b-2 border-gray-300'>
+               <div class='mr-4'>
+                  <h2 >My Resume.</h2>
+               </div>
+               <div >
+                  <i class="fas fa-briefcase"></i>
+               </div>
+            </div>
+            <!--Experience Section-->
+            <!--Flex Parent will turn both off the section below into columns-->
+            <div class='md:flex  md:m-auto'>
+               <div class='md:flex-1'>
+                  <div class='pt-12 mb-20 text-center'>
+                     <h3 class='inline-block mb-6 text-2xl  uppercase font-semibold  border-b-4 border-blue-500'>Experience</h3>
+                  </div>
+                  <div class='flex mb-12'>
+                     <div class='ml-4 border border-blue-600'>
+                     </div>
+                     <div class="pl-8 pr-8 pt-4 text-left">
+                        <h3 class='mb-2 font-semibold text-xl  '>IT support specialist</h3>
+                        <span class='mb-2 font-semibold text-blue-600'>Norwalk Community College, Volunteer</span>
+                        <p class='mt-2 text-gray-600'>This was a volunter job that i participated for 2 years at Norwalk Community College</p>
+                        <p class='mt-2 text-gray-600'>Assembled and repaired several computers often requiring a change in some internal components. Diagnosed several windows related issues for teachers</p>
+                     </div>
+                  </div>
+                  <div class='flex mb-12'>
+                     <div id = 'borderResume' class='ml-4 border border-blue-600'>
+                     </div>
+                     <div class="pl-8 pr-8 pt-4 text-left">
+                        <h3 class='mb-2 font-semibold text-xl'>Live Plant Nursery Specialist</h3>
+                        <span class='mb-2 font-semibold text-blue-600'>Growers Direct - Walmart</span>
+                        <p class='mt-2 text-gray-600'>Sole manager of the entire plant nursery department in Walmart on Main Avenue, Norwalk Connecticut </p>
+                        <p class='mt-2 text-gray-600'>Responsible for all plant care, inventory, plant maintenence and customer relations</p>
+                        <p class='mt-2 text-gray-600'>Duties included establishing connection with various Growers Direct vendors, building rapport with customers while siumltaneously giving advice on plant care that related from watering techniques to soil care </p>
+                     </div>
+                  </div>
+                  <div class='flex '>
+                     <div class='ml-4 border border-blue-600'>
+                     </div>
+                     <div class="pl-8 pr-8 pt-4 text-left">
+                        <h3 class='mb-2 font-semibold text-xl'>Plant Essentials - Lowes</h3>
+                        <span class='mb-2 font-semibold text-blue-600'>Plant Specialist</span>
+                        <p class='mt-2 text-gray-600'>Much off the same above duties, took care of live plant products, rotated inventory with newer product while siumltaneously disposing off the old product</p>
+                        <p  class='mt-2 text-gray-600'>Worked with inventory to label defective plant products, stolen plants</p>
+                     </div>
+                  </div>
+               </div>
+               <!--My Education starts here!!!!!!!!!!!!!!!!!!!-->
+               <div class="md:flex-1">
+                  <div class='pt-12 mb-20 text-center'>
+                     <h3 class='inline-block mb-6 text-2xl  uppercase font-semibold  border-b-4 border-blue-500'>Education</h3>
+                  </div>
+                  <div class='flex mb-12'>
+                     <div class='ml-4 border border-blue-600'>
+                     </div>
+                     <div class="pl-8 pr-8 pt-4 text-left">
+                        <h3 class='mb-2 font-semibold text-xl'>Norwalk Community College</h3>
+                        <span class='mb-2 font-semibold text-blue-600'>Associates in Web development and Design</span>
+                        <p class='mt-2 text-gray-600'>
+                           Studied a variety of programing languages, which include Javascript, SQL, C++, with a focus in Web Design as-well i also learned how to use multiple adobe programs such as photoshop, illustrator, and design principles
+                        </p>
+                     </div>
+                  </div>
+                  <div class='flex mb-12'>
+                     <div class='ml-4 border border-blue-600'>
+                     </div>
+                     <div class="pl-8 pr-8 pt-4 text-left">
+                        <h3 class='mb-2 font-semibold text-xl'>Brien McMahon High-School</h3>
+                        <span class='mb-2 font-semibold text-blue-600'>General High-School Degree</span>
+                        <p class='mt-2 text-gray-600'>
+                           General highschool degree, made the honor roll twice and graduated with a 2.8
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+      <script defer src='script.js'></script>
+   </body>
+</html>
+
