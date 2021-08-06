@@ -45,9 +45,7 @@
 .transition-wipe{
   transition: .9s cubic-bezier(0,0,.58,1);
   transform:scaleX(0);
-  /*Taken from youtube, why does it animate again when im leaving the page?
-  it animates from the right side, which isn't specified anywhere here on the page, it would make sense to do. swup adding this?
-  */
+
 }
 
 html.is-animating .transition-wipe {
