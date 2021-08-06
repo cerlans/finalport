@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kevin G. Developer & Designer</title>
+      <link href="styles.css" rel='stylesheet'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <script src ="node_modules/swup/dist/swup.min.js"></script>
+   </head>
+   <body>
+      <div class='md:flex'>
+         <header class='md:w-52 md:flex-shrink-0 shadow-md'>
+            <nav class='flex  bg-gray-300 text-gray-900 shadow-lg md:hidden'>
+               <!--Burger Menue-->
+               <div class=' pr-4 pl-4 pt-2   mr-4 text-2xl border-r border-gray-500 cursor-pointer' id="controllerNav">
+                  <i class="fas fa-bars"></i>
+               </div>
+               <!--nav Title-->
+               <div class='flex-1 p-2  text-2xl  font-bold uppercase  text-center'>
+                  Kevin G
+               </div>
+            </nav>
+            <!--Containing Parent, will be a width off around 30%-->
+            <div class='toggleSmall h-screen bg-gray-200 shadow-lg z-10 fixed top-0 overflow-x-hidden flex-shrink-0 md:w-52  md:static md:shadow-lg md:relative ' id='hiddenMenu'>
+               <!--Absolutely Positioned X mark-->
+               <div id='closeMark' class='absolute p-4  text-2xl  bg-gray-200 md:hidden '>
+                  <i class="fas fa-times"></i>
+               </div>
+               <!--SELFIE Image Container!!!!!!!!!!!!!!!!!!!!-->
+               <div class='flex flex-col h-full'>
+                  <div>
+                     <div class='w-52 relative'>
+                        <img  class='w-52 ' src="https://i.vgy.me/PguXpb.jpg" alt="z4svLJ.png">
+                        <div class='w-full absolute left-0 bottom-0 pt-2 pb-2 opacity-75 text-2xl uppercase text-center font-bold bg-blue-600 text-white'>Kevin G.</div>
+                     </div>
+                     <!--Unorderd List that will contain the navigation-->
+                     <div class=' w-52 font-light text-lg text-left '>
+                        <ul>
+                           <a href='/index.html' class='click  '>
+                              <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none '><i class="fas fa-home mr-4"></i>Home</li>
+                           </a>
+                           <a href="/about.html" class='click cursor-pointer'>
+                              <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-user mr-4"></i>About</li>
+                           </a>
+                           <a href="/resume.html" class='click cursor-pointer'>
+                              <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-sticky-note mr-4"></i>Resume</li>
+                           </a>
+                           <a href="/portfolio.html" class='click cursor-pointer'>
+                              <li class='pt-4 pb-4 pr-8 pl-8 mb-2 border-b-2 border-gray-300 pointer-events-none'><i class="far fa-copy mr-4"></i>Projects</li>
+                           </a>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class='mt-auto'>
+                     <div class='p-4 w-52 text-sm font-light text-left font-semibold text-blue-600' >
+                        <div>
+                           2021 © Kevin G.
+                           All Right Reserved.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main id='swup' class='transition-fade  w-full md:overflow-auto'>
+            <div  class='flex justify-center items-center  text-center text-6xl text-white font-bold uppercase' id='backgroundHome'>
+               <div >
+                  <h1 class='mb-6'>Kevin <span class='text-blue-400'>G</span></h1>
+                  <section class="cd-intro text-2xl">
+                     <h2 class="cd-headline rotate-1">Web Developer <span class='text-blue-400'>& </span> Designer</h2>
+                  </section>
+                  <!-- cd-intro -->
+               </div>
+            </div>
+         </main>
+         <script defer src='script.js'></script>
+      </div>
+   </body>
+</html>
+
