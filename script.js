@@ -6,7 +6,7 @@ let controllerNav = document.getElementById('controllerNav');
 let hiddenMenu = document.getElementById('hiddenMenu');
 let closeMark = document.getElementById('closeMark')
 
-if(window.innerWidth < 768){
+if(window.innerWidth < 668){
       
     console.log(controllerNav)
     /* Need to add a class instead of directly injecting styles */
