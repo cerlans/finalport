@@ -5,7 +5,7 @@ const swup = new Swup();
 let controllerNav = document.getElementById('controllerNav');
 let hiddenMenu = document.getElementById('hiddenMenu');
 let closeMark = document.getElementById('closeMark')
-
+console.log('random')
 if(window.innerWidth < 668){
       
     console.log(controllerNav)
