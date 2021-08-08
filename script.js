@@ -7,9 +7,11 @@ let hiddenMenu = document.getElementById('hiddenMenu');
 let closeMark = document.getElementById('closeMark')
 console.log('random')
 
-if(window.innerWidth < 768){
+
+window.addEventListener('resize',function(){
+  if(window.innerWidth < 768){
       
-    console.log(controllerNav)
+    console.log('working')
     /* Need to add a class instead of directly injecting styles */
     controllerNav.addEventListener('click',()=>{
       hiddenMenu.classList.remove('toggleSmall')
@@ -37,3 +39,4 @@ if(window.innerWidth < 768){
     }
   })
 }
+})
